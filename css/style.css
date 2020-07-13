@@ -1,0 +1,784 @@
+/* font-family: 'Poppins', sans-serif; headings */
+/* font-family: 'Open Sans', sans-serif;  call for action */
+
+*{
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* ---------------------- */
+/* BASIC SETUP */
+/* ---------------------- */
+
+html,
+body{
+    background-color: #fff;
+    color: #000;
+    Font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+/* ========reusable components========== */
+
+.flexbox-1,
+.flexbox-2,
+.flexbox-3,
+.flexbox-4,
+.flexbox-5{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.box,
+.box-1{
+    border-radius: 20px;
+    box-shadow: 0 0 15px #e2d8d8;
+}
+
+.btn{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+.btn-get-started,
+.btn-fix{
+    width: 240px;
+    height: 40px;
+    margin: 36px 67px;
+    border-radius: 30px;
+    background-color: #FE52C0;
+}
+
+.btn-get-started > a,
+.btn-fix > a {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+/* =========header========== */
+
+header{
+    background-image: url(./img/bg-hero-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+    margin-bottom: 36px;
+}
+/* ==============nav============= */
+.flexbox-1{
+    margin-top: 26px;
+}
+
+.logo > img{
+    width: 115px;
+    height: 20px;
+}
+
+.try-it-free{
+    width: auto;
+    height: 30px;
+    border-radius: 30px;
+    padding: 0 12px;
+    box-shadow: 0 0 10px #c9c7c7;
+}
+
+.try-it-free > a {
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+/* ============hero-content============ */
+.hero-content{
+    flex: 0 0 90;
+    text-align: center;
+}
+
+.hero-content h1{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin: 80px 20px 30px 20px;
+}
+
+.hero-content p{
+    font-size: 18px;
+    margin: 0 5%;
+}
+
+
+.img-prototype > img{
+    flex: 0 0 90;
+    width: 80%;
+    height: auto;
+    margin: 0 10%;
+   
+}
+
+/* ====================sub-content====================== */
+.sub-content{
+    margin-top: 55px;
+    margin-bottom: 100px;
+}
+
+.box{
+    margin: 58px 30px;
+}
+
+.one-img{
+    flex: 0 0 80;
+}
+.one-img > img{
+    width: 80%;
+    height: auto;
+    margin: 20% 10% 15% 10%;
+}
+
+.one-content{
+    flex: 0 0 80;
+    text-align: center;
+    margin: 0 10%;
+    margin-bottom: 10%;
+}
+
+.one-content h2{
+    font-size: 20px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.one-content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 2%;
+    color:  hsl(208, 11%, 55%);
+    font-weight: 400;
+}
+
+
+/* ==========built-box=========== */
+
+.box-1{
+    margin: 0 30px;
+    margin-bottom: -60px;
+    position: relative;
+   
+}
+
+.flexbox-5 > h2{
+    font-size: 18px;
+    padding: 50px 0 5px 0;
+    text-align: center;
+}
+.btn-fix{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+}
+
+.btn .btn-fix{
+    padding-bottom: 40px;
+}
+
+/* ============Footer============= */
+footer{
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.part-1{
+    flex: 0 0 90%;
+    margin: 0 10%;
+}
+
+.part-1 > img{
+    margin-top: 135px;
+    margin-bottom: 20px;
+}
+
+.part-1 > p{
+    padding: 5% 2%;
+}
+
+ion-icon{
+    padding: 0 5% 0 1%;
+    font-size: 20px;
+}
+
+.part-2{
+    flex: 0 0 90%;
+
+}
+
+.part-2 > a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 4%;
+}
+.part-2 >a::after{
+    content: "\a";
+    white-space: pre;
+}
+
+.social-icons{
+    flex: 0 0 90%;
+    margin: 10% 0 5% 0;
+    text-align: center;
+}
+
+.round-icons{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 2%;
+    margin: 0 3%;
+}
+
+.copyright p{
+    font-size: 10px;
+    margin: 0 0 10% 0;
+}
+
+.attribution {
+      font-size: 14px;
+      text-align: center;
+      padding: 0 0 10px 0 ;
+}
+
+.attribution a {
+      color: hsl(322, 100%, 66%);
+}
+
+/* ====================MEDIA QUERIES====================== */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+/* ---------------------- */
+/* BASIC SETUP */
+/* ---------------------- */
+
+html,
+body{
+    background-color: #fff;
+    color: #000;
+    Font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+/* ========reusable components========== */
+
+.flexbox-1,
+.flexbox-2,
+.flexbox-3,
+.flexbox-4,
+.flexbox-5{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.box,
+.box-1{
+    border-radius: 20px;
+    box-shadow: 0 0 15px #e2d8d8;
+}
+
+.btn{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+.btn-get-started,
+.btn-fix{
+    width: 240px;
+    height: 40px;
+    margin: 36px 67px;
+    border-radius: 30px;
+    background-color: #FE52C0;
+}
+
+.btn-get-started > a,
+.btn-fix > a {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+/* =========header========== */
+
+header{
+    background-image: url(./img/bg-hero-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+    margin-bottom: 36px;
+}
+/* ==============nav============= */
+.flexbox-1{
+    margin-top: 26px;
+}
+
+.logo > img{
+    width: 115px;
+    height: 20px;
+}
+
+.try-it-free{
+    width: auto;
+    height: 30px;
+    border-radius: 30px;
+    padding: 0 12px;
+    box-shadow: 0 0 10px #c9c7c7;
+}
+
+.try-it-free > a {
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+/* ============hero-content============ */
+.hero-content{
+    flex: 0 0 90;
+    text-align: center;
+}
+
+.hero-content h1{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin: 80px 20px 30px 20px;
+}
+
+.hero-content p{
+    font-size: 18px;
+    margin: 0 5%;
+}
+
+
+.img-prototype > img{
+    flex: 0 0 90;
+    width: 80%;
+    height: auto;
+    margin: 0 10%;
+   
+}
+
+/* ====================sub-content====================== */
+.sub-content{
+    margin-top: 55px;
+    margin-bottom: 100px;
+}
+
+.box{
+    margin: 58px 30px;
+}
+
+.one-img{
+    flex: 0 0 80;
+}
+.one-img > img{
+    width: 80%;
+    height: auto;
+    margin: 20% 10% 15% 10%;
+}
+
+.one-content{
+    flex: 0 0 80;
+    text-align: center;
+    margin: 0 10%;
+    margin-bottom: 10%;
+}
+
+.one-content h2{
+    font-size: 20px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.one-content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 2%;
+    color:  hsl(208, 11%, 55%);
+    font-weight: 400;
+}
+
+
+/* ==========built-box=========== */
+
+.box-1{
+    margin: 0 30px;
+    margin-bottom: -60px;
+    position: relative;
+}
+
+.flexbox-5 > h2{
+    font-size: 18px;
+    padding: 50px 0 5px 0;
+    text-align: center;
+}
+.btn-fix{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+}
+
+.btn .btn-fix{
+    padding-bottom: 40px;
+}
+
+/* ============Footer============= */
+footer{
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.part-1{
+    flex: 0 0 90%;
+    margin: 0 10%;
+}
+
+.part-1 > img{
+    margin-top: 135px;
+    margin-bottom: 20px;
+}
+
+.part-1 > p{
+    padding: 5% 2%;
+}
+
+ion-icon{
+    padding: 0 5% 0 1%;
+    font-size: 20px;
+}
+
+.part-2{
+    flex: 0 0 90%;
+
+}
+
+.part-2 > a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 4%;
+}
+.part-2 >a::after{
+    content: "\a";
+    white-space: pre;
+}
+
+.social-icons{
+    flex: 0 0 90%;
+    margin: 10% 0 5% 0;
+    text-align: center;
+}
+
+.round-icons{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 2%;
+    margin: 0 3%;
+}
+
+.copyright p{
+    font-size: 10px;
+    margin: 0 0 10% 0;
+}
+
+.attribution {
+      font-size: 14px;
+      text-align: center;
+      padding: 0 0 10px 0 ;
+}
+
+.attribution a {
+      color: hsl(322, 100%, 66%);
+}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1500px) {
+/* ---------------------- */
+/* BASIC SETUP */
+/* ---------------------- */
+
+html,
+body{
+    Font-size: 25px;
+}
+
+/* ========reusable components========== */
+
+
+.box,
+.box-1{
+    border-radius: 20px;
+    box-shadow: 0 0 15px #e2d8d8;
+}
+
+.btn{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+
+.btn-fix{
+    width: 240px;
+    height: 40px;
+    margin: 36px 67px;
+    border-radius: 30px;
+    background-color: #FE52C0;
+}
+
+
+.btn-fix > a {
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+
+/* =========header========== */
+
+header{
+    background-image: url(./img/bg-hero-desktop.svg);
+    margin-bottom: 36px;
+}
+/* ==============nav============= */
+.flexbox-1{
+    margin-top: 26px;
+}
+
+.logo > img{
+    width: 170px;
+    height: 30px;
+}
+
+.try-it-free{
+    padding: 0 20px;
+}
+
+.try-it-free > a {
+    font-size: 10px;
+}
+
+/* ============hero-content============ */
+.hero-content{
+    flex: 0 0 10;
+    text-align: left;
+}
+
+.hero-content h1{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin:  80px 10px 30px 10px;
+}
+
+.hero-content p{
+    margin: 0 5%;
+    text-align: left;
+    
+}
+
+.btn-get-started{
+    width: 240px;
+    height: 40px;
+    /* margin: 36px 67px; */
+    border-radius: 30px;
+    background-color: #FE52C0;
+}
+
+.btn-get-started > a{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.img-prototype > img{
+    flex: 0 0 33;
+    width: 40%;
+    height: auto;
+    margin: 0 10%;
+   
+}
+
+/* ====================sub-content====================== */
+.sub-content{
+    margin-top: 55px;
+    margin-bottom: 100px;
+}
+
+.box{
+    margin: 58px 30px;
+}
+
+.one-img{
+    flex: 0 0 80;
+}
+.one-img > img{
+    width: 80%;
+    height: auto;
+    margin: 20% 10% 15% 10%;
+}
+
+.one-content{
+    flex: 0 0 80;
+    text-align: center;
+    margin: 0 10%;
+    margin-bottom: 10%;
+}
+
+.one-content h2{
+    font-size: 20px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.one-content p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 2%;
+    color:  hsl(208, 11%, 55%);
+    font-weight: 400;
+}
+
+
+/* ==========built-box=========== */
+
+.box-1{
+    margin: 0 30px;
+    margin-bottom: -60px;
+    position: relative;
+}
+
+.flexbox-5 > h2{
+    font-size: 18px;
+    padding: 50px 0 5px 0;
+    text-align: center;
+}
+.btn-fix{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+}
+
+.btn .btn-fix{
+    padding-bottom: 40px;
+}
+
+/* ============Footer============= */
+footer{
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.part-1{
+    flex: 0 0 90%;
+    margin: 0 10%;
+}
+
+.part-1 > img{
+    margin-top: 135px;
+    margin-bottom: 20px;
+}
+
+.part-1 > p{
+    padding: 5% 2%;
+}
+
+ion-icon{
+    padding: 0 5% 0 1%;
+    font-size: 20px;
+}
+
+.part-2{
+    flex: 0 0 90%;
+
+}
+
+.part-2 > a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 4%;
+}
+.part-2 >a::after{
+    content: "\a";
+    white-space: pre;
+}
+
+.social-icons{
+    flex: 0 0 90%;
+    margin: 10% 0 5% 0;
+    text-align: center;
+}
+
+.round-icons{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 2%;
+    margin: 0 3%;
+}
+
+.copyright p{
+    font-size: 10px;
+    margin: 0 0 10% 0;
+}
+
+.attribution {
+      font-size: 14px;
+      text-align: center;
+      padding: 0 0 10px 0 ;
+}
+
+.attribution a {
+      color: hsl(322, 100%, 66%);
+}
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 1920px) {
+
+}
