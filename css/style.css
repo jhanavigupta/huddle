@@ -104,9 +104,9 @@ header{
     font-size: 10px;
 }
 
-/* ============hero-content============ */
+/* ============FLEXB0X-2============ */
 .hero-content{
-    flex: 0 0 90;
+    flex: 0 0 90%;
     text-align: center;
 }
 
@@ -123,14 +123,14 @@ header{
 
 
 .img-prototype > img{
-    flex: 0 0 90;
+    flex: 0 0 90%;
     width: 80%;
     height: auto;
     margin: 0 10%;
    
 }
 
-/* ====================sub-content====================== */
+/* ====================FLEXBOX-3====================== */
 .sub-content{
     margin-top: 55px;
     margin-bottom: 100px;
@@ -141,7 +141,7 @@ header{
 }
 
 .one-img{
-    flex: 0 0 80;
+    flex: 0 0 80%;
 }
 .one-img > img{
     width: 80%;
@@ -150,7 +150,7 @@ header{
 }
 
 .one-content{
-    flex: 0 0 80;
+    flex: 0 0 80%;
     text-align: center;
     margin: 0 10%;
     margin-bottom: 10%;
@@ -269,31 +269,9 @@ ion-icon{
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-/* ---------------------- */
-/* BASIC SETUP */
-/* ---------------------- */
-
-html,
-body{
-    background-color: #fff;
-    color: #000;
-    Font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    max-width: 100%;
-    text-rendering: optimizeLegibility;
-}
 
 /* ========reusable components========== */
 
-.flexbox-1,
-.flexbox-2,
-.flexbox-3,
-.flexbox-4,
-.flexbox-5{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
 
 .box,
 .box-1{
@@ -340,7 +318,7 @@ header{
     height: 100vh;
     margin-bottom: 36px;
 }
-/* ==============nav============= */
+/* =====nav===== */
 .flexbox-1{
     margin-top: 26px;
 }
@@ -366,30 +344,28 @@ header{
     font-size: 10px;
 }
 
-/* ============hero-content============ */
+/* ============FLEXBOX-3============ */
 .hero-content{
-    flex: 0 0 90;
-    text-align: center;
+    flex: 0 0 30%;
 }
 
 .hero-content h1{
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
-    margin: 80px 20px 30px 20px;
+    /* margin: 80px 10px 30px 10px; */
 }
 
 .hero-content p{
     font-size: 18px;
-    margin: 0 5%;
+    /* margin: 0 5%; */
 }
 
 
 .img-prototype > img{
-    flex: 0 0 90;
+    flex: 0 0 30%;
     width: 80%;
     height: auto;
-    margin: 0 10%;
-   
+    /* margin: 0 10%; */
 }
 
 /* ====================sub-content====================== */
@@ -399,38 +375,32 @@ header{
 }
 
 .box{
-    margin: 58px 30px;
+    margin: 58px 40px;
 }
 
 .one-img{
-    flex: 0 0 80;
+    flex: 0 0 20%;
 }
 .one-img > img{
-    width: 80%;
+    width: 120%;
     height: auto;
-    margin: 20% 10% 15% 10%;
+    margin: 50% 5%;
 }
 
 .one-content{
-    flex: 0 0 80;
-    text-align: center;
-    margin: 0 10%;
-    margin-bottom: 10%;
+    flex: 0 0 70%;
+    text-align: left;
+    margin: 0 1%;
+    margin: 10% 0;
 }
 
 .one-content h2{
-    font-size: 20px;
-    color: #000;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    margin-bottom: 2%;
+    margin-left: 3%;
 }
 
 .one-content p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    padding: 2%;
-    color:  hsl(208, 11%, 55%);
-    font-weight: 400;
+    margin-left: 3%;
 }
 
 
