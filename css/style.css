@@ -22,12 +22,9 @@ body{
 
 /* ========reusable components========== */
 
-
-
 .flexbox-2,
 .flexbox-3,
-.flexbox-6,
-.flexbox-5{
+.flexbox-6{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -54,10 +51,6 @@ body{
     background-color: #fff;
 }
 
-
-
-
-
 /* =========header========== */
 
 header{
@@ -66,7 +59,8 @@ header{
     background-position: center;
     overflow: hidden;
     height: 100vh;
-    margin-bottom: 36px;
+    margin-bottom: -15px;
+    
 }
 /* ==============nav============= */
 .flexbox-1{
@@ -79,6 +73,7 @@ header{
 }
 
 .try-it-free{
+    margin-top: 1%;
     width: auto;
     height: 30px;
     border-radius: 30px;
@@ -86,12 +81,12 @@ header{
     box-shadow: 0 0 10px #c9c7c7;
 }
 
-.try-it-free > a {
-    text-decoration: none;
-    outline: none;
+.try-it-free > h2 {
+    /* text-decoration: none;
+    outline: none; */
     color: #000;
     font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 /* ============FLEXB0X-2============ */
@@ -119,12 +114,10 @@ header{
     background-color: #FE52C0;
 }
 
-.btn-get-started > a {
-    text-decoration: none;
-    outline: none;
+.btn-get-started > h2 {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     font-weight: 400;
 }
@@ -142,7 +135,6 @@ header{
 
 /* ====================FLEXBOX-3====================== */
 .sub-content{
-    margin-top: 55px;
     margin-bottom: 100px;
 }
 
@@ -200,17 +192,15 @@ header{
 .btn-fix{
     width: 240px;
     height: 40px;
-    margin: 36px 40px;
     border-radius: 30px;
     background-color: #FE52C0;
+    margin: 10%;
 }
 
-.btn-fix > a {
-    text-decoration: none;
-    outline: none;
+.btn-fix > h2 {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     font-weight: 400;
 }
@@ -285,6 +275,11 @@ footer{
     margin: 0 3%;
 }
 
+.copyright{
+    text-align: center;
+    margin: 0;
+}
+
 .copyright p{
     font-size: 10px;
     margin: 0 0 10% 0;
@@ -302,7 +297,7 @@ footer{
 
 /* ====================MEDIA QUERIES====================== */
 
-/* @media only screen and (min-width: 768px) and (max-width: 1024px) { */
+
 
 
 @media only screen and (min-width: 1025px) {
@@ -312,21 +307,12 @@ footer{
         background-color: #ffffff;
     }
 
-    /* ========reusable components========== */
-
-    .flexbox-2,
-    .flexbox-4,
-    .flexbox-5{
-    display: flex;
-    flex-flow: row ;
-    justify-content: space-evenly;
-    }
 
     /* =========header========== */
 
     header{
     background-image: url(./img/bg-hero-desktop.svg);
-    margin-bottom: 0;
+    margin-bottom: -50px;
     }
 
     /* ==============nav============= */
@@ -365,9 +351,15 @@ footer{
 
     /* ============FLEXB0X-2============ */
 
+    .flexbox-2{
+        display: flex;
+        flex-flow: row ;
+        justify-content: space-evenly;
+    }
     .hero-content{
-        flex: 0 0 40%;
+        flex: 0 0 50%;
         text-align: left;
+        
     }
 
     .hero-content h1{
@@ -375,29 +367,33 @@ footer{
     }
 
     .img-prototype {
-        flex: 0 0 50%;
+        flex: 0 0 40%;
     }
 
     .img-prototype > img{
-        width: 80%;
+        width: 100%;
         height: auto;
-        margin: 10% 2%;
+        margin: 15% 0%;
    
     }
 
     /* ====================FLEXBOX-3/-6====================== */
-   .flexbox-3,
+    .box{
+        margin: 50px 80px;
+    }
+    
+    .flexbox-3,
    .flexbox-6{
         display: flex;
         flex-flow: row;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .flexbox-3{
         flex-direction: row-reverse;
     }
     .one-img{
-        flex: 0 0 30%;
+        flex: 0 0 40%;
     }
 
     .one-img > img{
@@ -407,9 +403,10 @@ footer{
 }
 
     .one-content{
-        flex: 0 0 40%;
+        flex: 0 0 45%;
         text-align: left;
-        margin: 5%;
+        margin: 10% 5%;
+
     }
 
     .one-content p{
@@ -434,30 +431,69 @@ footer{
 
     /* ============Footer============= */
 
+     .flexbox-4{
+        display: flex;
+        flex-flow: row ;
+        justify-content: space-evenly;
+    }
     /* .footer{
         margin: 0;
 
     } */
     .part-1{
-        flex: 0 0 20%;
+        flex: 0 0 30%;
         margin: 0 5%;
     }
     
     .part-2{
         flex: 0 0 20%;
-        margin-top: 12%;
+    }
 
+    .left,
+    .right{
+        text-align: left;
+        margin-top: 85%;
+        /* margin: 85% 5% 0 5%; */
+    }
+
+    .left{
+        float: left;
+    }
+
+    .right{
+        float: right;
     }
 
     .social-icons{
         flex: 0 0 20%;
-        margin: 20% 0 0 0;
+        margin: 17% 0 0 0;
     }
 
     .copyright {
-        margin-top: 30%;
+        margin: -3% 10% 0 0;
+        text-align: right;
     }
 
-    
+    .copyright p{
+        font-size: 12px;
+    }
 
+    .attribution {
+        padding: 0 0 10px 0 ;
+    }
+
+}
+
+@media only screen and (min-width: 1501px){
+    header{
+        margin-bottom: -350px;
+    }
+
+    .hero-content h1{
+        margin: 35% 5% 5% 5% ;
+    }
+
+    .img-prototype > img{
+        margin-top: 20% ;
+    }
 }
